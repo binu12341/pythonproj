@@ -1,0 +1,739 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/16-12-2017/homestead-demo_Free/1273701180/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jul 2022 10:11:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Hostel Management</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Homestead Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome-icons -->
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+<link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+
+</head>	
+<body>
+<script src="{% static 'http://m.servedby-buysellads.com/monetization.js' %}" type="text/javascript"></script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<script>
+(function(){
+if(typeof _bsa !== 'undefined' && _bsa) {
+	// format, zoneKey, segment:value, options
+	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+}
+})();
+</script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-149859901-1'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149859901-1');
+</script>
+
+<script>
+     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+     ga('create', 'UA-149859901-1', 'demo.w3layouts.com');
+     ga('require', 'eventTracker');
+     ga('require', 'outboundLinkTracker');
+     ga('require', 'urlChangeTracker');
+     ga('send', 'pageview');
+   </script>
+<script async src="{% static 'https://demo.w3layouts.com/js/autotrack.js' %}"></script>
+
+<meta name="robots" content="noindex">
+<body><link rel="stylesheet" href="{% static 'https://demo.w3layouts.com/assests/css/font-awesome.min.css' %}">
+<!-- New toolbar-->
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top:70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+.reg-form{
+  text-align: center;
+  display: grid;
+}
+</style>
+
+        <!---<div class="responsive-icons">
+            <a href="#url" class="desktop-mode">
+                <span class="w3l-icon -desktop">
+                    <span class="fa fa-desktop"></span>
+                </span>
+            </a>
+            <a href="#url" class="tablet-mode">
+                <span class="w3l-icon -tablet">
+                    <span class="fa fa-tablet"></span>
+                </span>
+            </a>
+            <a href="#url" class="mobile-mode no-margin-bottom">
+                <span class="w3l-icon -mobile">
+                    <span class="fa fa-mobile"></span>
+                </span>
+            </a>
+        </div>-->
+    </div>
+    <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
+        style="overflow: hidden; outline: none;">
+    </div>
+</div>
+</div>
+</div>
+
+<!-- banner -->
+<div class="header">
+	
+</div>
+<div class="top_heder_agile_info">
+	<div class="w3ls_agile_header_inner">	
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html">HOSTEL MANAGEMENT SYSTEM </a></h1>
+			</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--juliet">
+						
+						<h1>SECURITY REGISTRATION</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{% url 'login' %}">Back</a>
+						
+					</nav>
+				</div>
+		</nav>
+	</div>
+</div>
+<!-- //banner -->
+<!-- banner -->
+<div class="banner-silder">
+	<div class="banner">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ol>
+		</ol>
+			<i class="left"></i><i class="right"></i>
+			 <div class="banner_wthree_agile_info">
+        <style>
+          
+        </style>
+	
+			
+	</div>	
+</div>
+<!-- //banner -->
+<div class="reg-form">
+  <h3>Security Registration Form</h3>
+  <form method="POST">
+    {% csrf_token %}
+	<label>Security Id</label><input type="text" name="sid"><br><br>
+      <label>Security Name</label><input type="text" name="sname"><br><br>
+      <label>Address</label><input type="text" name="sadds"><br><br>
+      <label>Password</label><input type="text" name="spass"><br><br>
+      <label>Email</label><input type="text" name="semail"><br><br>
+      <label>Contact Phone</label><input type="text" name="sphon"><br><br>
+      <label>Gender</label><input type="text" name="gender"><br><br>
+      <label>Experience</label><input type="number" name="experience"><br><br>
+      <label>Salary Expectation</label><input type="number" name="salary"><br><br>
+      <button type="submit">Register</button>
+      </form>
+</div>
+<!-- popular -->
+
+
+
+	<div class="clearfix"></div>
+</div>
+<!-- //banner-bottom -->
+
+<!-- team -->
+
+	<!--<div class="team">
+		<div class="container">
+			 <div class="wthree-heading">
+				<h3 class="w3l_header">Our Team</h3>
+				<p class="quia">Etiam sodales orci sit amet vehicula pellentesque</p>
+			</div>
+			<div class="agile_inner_grids">
+				<div class="col-md-4 w3_agile_team_grid_info">
+				   <img src="images/t1.jpg" alt=" " class="img-responsive" />
+					<h3>Amanda Seylon</h3>
+					<p>Site Manager</p>
+					<ul class="footer_list_icons team_icons_agile">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								
+					</ul>
+				</div>
+				<div class="col-md-4 w3_agile_team_grid_info">
+					  <img src="images/t4.jpg" alt=" " class="img-responsive" />
+					<h3>Laura Mark</h3>
+				   <p>Manager</p>
+					<ul class="footer_list_icons team_icons_agile">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>	
+					</ul>
+				</div>
+				<div class="col-md-4 w3_agile_team_grid_info">
+					  <img src="images/t3.jpg" alt=" " class="img-responsive" />
+					<h3>Minnie Lott</h3>
+						<p>Worker</p>
+					<ul class="footer_list_icons team_icons_agile">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>-->
+<!-- team -->
+<!-- feedback -->
+	<!--<div class="feedback">
+		<div class="container">
+			<div class="wthree-heading feedback-heading">
+				<h3 class="w3l_header two">Customer Feedback</h3>
+				<p class="quia">Etiam sodales orci sit amet vehicula pellentesque</p>
+			</div>
+			<div class="agileits-feedback-grids">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="feedback-info">
+							<div class="feedback-top">
+								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+							</div>
+							<div class="feedback-grids">
+								<div class="feedback-img">
+									<img src="{% static 'images/f1.jpg' %}" alt="" />
+								</div>
+								<div class="feedback-img-info">
+									<h5>Peter Parker</h5>
+									<p>Vestibulum</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="feedback-info">
+							<div class="feedback-top">
+								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+							</div>
+							<div class="feedback-grids">
+								<div class="feedback-img">
+									<img src="{% static 'images/f2.jpg' %}" alt="" />
+								</div>
+								<div class="feedback-img-info">
+									<h5>Mary Jane</h5>
+									<p>Vestibulum</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="feedback-info">
+							<div class="feedback-top">
+								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+							</div>
+							<div class="feedback-grids">
+								<div class="feedback-img">
+									<img src="{% static 'images/f3.jpg' %}" alt="" />
+								</div>
+								<div class="feedback-img-info">
+									<h5>Steven Wilson</h5>
+									<p>Vestibulum</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="feedback-info">
+							<div class="feedback-top">
+								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
+							</div>
+							<div class="feedback-grids">
+								<div class="feedback-img">
+									<img src="{% static 'images/f4.jpg' %}" alt="" />
+								</div>
+								<div class="feedback-img-info">
+									<h5>Peter Parker</h5>
+									<p>Vestibulum</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+<!-- //feedback -->
+<!-- Stats -->
+		<!--<div class="stats">
+			<div class="container">
+				<div class="wthree-heading">
+				<h3 class="w3l_header">Overview</h3>
+				<p class="quia">Etiam sodales orci sit amet vehicula pellentesque</p>
+			</div>
+				<div class="stats-info-1">
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+					   <i class="fa fa-user" aria-hidden="true"></i>
+					
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='16500' data-delay='.5' data-increment="50">16500</div>
+						<p class="stats-info">Happy Clients</p>
+					</div>
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+						<i class="fa fa-briefcase" aria-hidden="true"></i>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='210' data-delay='.5' data-increment="5">210</div>
+						<p class="stats-info">Sales per month</p>
+					</div>
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='20500' data-delay='.5' data-increment="20">20500</div>
+						<p class="stats-info">Number of Homes</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>-->
+		<!-- //Stats -->
+<!-- myModal -->
+			<!--<div class="tooltip-content">
+
+					<div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">homestead</h4>
+								</div>
+								<div class="modal-body">
+									<img src="images/g4.jpg" class="img-responsive" alt="Boat house">
+									<h5>Fishing Season Now Open</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius lectus vitae porttitor fringilla. Donec turpis orci, elementum a nunc quis, maximus varius ipsum. Sed bibendum ex in dignissim bibendum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>-->
+				<!-- //myModal -->
+<!-- footer -->
+	<!--<div class="footer">
+		<div class="container">
+			<div class="col-md-4 agile_footer_grid">
+				<h3>Contact Info</h3>
+				<ul class="w3_address">
+					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
+					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+				</ul>
+			</div>
+			<div class="col-md-4 agile_footer_grid">
+				<h3>About Us</h3>
+				
+				
+			</div>-->
+			
+<!-- //footer -->
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- carousal -->
+	<script src="{% static 'js/slick.js' %}" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+		  $(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			responsive: [
+				{
+				  breakpoint:800,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					slidesToShow: 1
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}
+			 ]
+		  });
+		});
+	</script>
+<!-- //carousal -->
+<!-- //js -->
+<script>
+        $(function(){ 
+
+  // parameters
+  // image height
+  var images_height = '350px';
+  // array of images
+  var images_url = [
+      'images/banner.jpg',
+      'images/banner-1.jpg',
+      
+  ];
+  var images_count = images_url.length;
+
+  // create nodes
+  for(var j=0;j<images_count+1;j++){
+      $('.banner ul').append('<li></li>')
+  }
+
+  // pagination
+  for(var j=0;j<images_count;j++){
+      if(j==0){
+          $('.banner ol').append('<li class="current"></li>')
+      }else{
+          $('.banner ol').append('<li></li>')
+      }
+  }
+
+  // convert images into backgrounds
+  $('.banner ul li').css('background-image','url('+images_url[0]+')');
+  
+  $.each(images_url,function(key,value){
+      $('.banner ul li').eq(key).css('background-image','url('+value+')');
+  });
+
+  $('.banner').css('height',images_height);
+
+  $('.banner ul').css('width',(images_count+1)*100+'%');
+
+  $('.banner ol').css('width',images_count*20+'px');
+  $('.banner ol').css('margin-left',-images_count*20*0.5-10+'px');
+
+  var num = 0;
+
+  var window_width = $(window).width();
+
+  $(window).resize(function(){
+      window_width = $(window).width();
+      $('.banner ul li').css({width:window_width});
+      clearInterval(timer);
+      nextPlay();
+      timer = setInterval(nextPlay,2000);
+  });
+
+  $('.banner ul li').width(window_width);
+
+  // pagination dots
+  $('.banner ol li').mouseover(function(){
+      $(this).addClass('current').siblings().removeClass('current');
+      var i = $(this).index();
+      //console.log(i);
+      $('.banner ul').stop().animate({left:-i*window_width},500);
+      num = i;
+  });
+
+  // autoplay
+  var timer = null;
+
+  function prevPlay(){
+      num--;
+      if(num<0){
+          $('.banner ul').css({left:-window_width*images_count}).stop().animate({left:-window_width*(images_count-1)},500);
+          num=images_count-1;
+      }else{
+          $('.banner ul').stop().animate({left:-num*window_width},500);
+      }
+      if(num==images_count-1){
+          $('.banner ol li').eq(images_count-1).addClass('current').siblings().removeClass('current');
+      }else{
+          $('.banner ol li').eq(num).addClass('current').siblings().removeClass('current');
+
+      }
+  }
+
+  function nextPlay(){
+      num++;
+      if(num>images_count){
+          $('.banner ul').css({left:0}).stop().animate({left:-window_width},500);
+          num=1;
+      }else{
+          $('.banner ul').stop().animate({left:-num*window_width},500);
+      }
+      if(num==images_count){
+          $('.banner ol li').eq(0).addClass('current').siblings().removeClass('current');
+      }else{
+          $('.banner ol li').eq(num).addClass('current').siblings().removeClass('current');
+
+      }
+  }
+
+  timer = setInterval(nextPlay,2000);
+
+  // auto pause on mouse enter
+  $('.banner').mouseenter(function(){
+      clearInterval(timer);
+      $('.banner i').fadeIn();
+  }).mouseleave(function(){
+      timer = setInterval(nextPlay,2000);
+      $('.banner i').fadeOut();
+  });
+
+  // goto next
+  $('.banner .right').click(function(){
+      nextPlay();
+  });
+
+  // back to previous
+  $('.banner .left').click(function(){
+      prevPlay();
+  });
+
+});
+    </script>
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- //here ends scrolling icon -->
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
+	<script>
+$(document).ready(function() { 
+	$("#owl-demo").owlCarousel({
+ 
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		autoPlay:true,
+		items : 3,
+		itemsDesktop : [640,5],
+		itemsDesktopSmall : [414,4]
+ 
+	});
+	
+}); 
+</script>
+<script type="text/javascript" src="{% static 'js/numscroller-1.0.js' %}"></script>
+
+
+<div id = "v-w3layouts"></div><script>(function(v,d,o,ai){ai=d.createElement('script');ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, 'http://a.vdo.ai/core/v-w3layouts/vdo.ai.js');</script>
+	</body>
+
+<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/16-12-2017/homestead-demo_Free/1273701180/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jul 2022 10:13:47 GMT -->
+</html>
